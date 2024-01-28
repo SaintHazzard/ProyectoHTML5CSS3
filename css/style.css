@@ -18,17 +18,18 @@ html{
 }
 body{
   width: 99vw;
-  height: 100vh;
+  height: 400vh;
 }
 
 .bodycont{
   width: 99vw;
-  height: 99vh;
+  height: 100vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 header{
+  background-color: #1e1d2b;
  height: 8rem;
  width: 99vw;
  display: flex;
@@ -38,6 +39,7 @@ header{
  top: 0;
  left: 0;
  align-items: center;
+ z-index: 100;
 }
 .menu{
   width: 42%;
@@ -54,7 +56,7 @@ header{
 
 
 .espacio, header{
-  height: 5rem;
+  height: 10vh;
   width: 99vw;
 }
 
@@ -133,9 +135,54 @@ header{
   }
 }
 
-.bodycont:nth-child(2){
-align-items: center;
+
+.bodycont:nth-of-type(n+2){
+margin-top: 10vh;
 }
-.content-about{
-/* justify-content: space-around; */
+.bodycont:nth-of-type(2){
+align-items: center;
+justify-items: end;
+gap: 5rem;
+
+}
+
+
+#toMenu{
+  display: flex;
+  flex-direction: column;
+  width: 99vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.card-menu{
+  margin-top: 3rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffefe8;
+    box-shadow:
+        3px 3px 0px 2px #fff, /* fondo */
+        5px 5px 0px 2px #ccc, /* línea gris */
+        7px 7px 0px 2px #fff, /* espacio en blanco */
+        9px 9px 0px 2px #ccc, /* línea gris */
+        -3px -3px 0px 2px #fff, /* fondo */
+        -5px -5px 0px 2px #ccc, /* línea gris */
+        -7px -7px 0px 2px #fff, /* espacio en blanco */
+        -9px -9px 0px 2px #ccc; /* línea gris */
+}
+
+.subtitule-card, .description-food{
+  color: #000000;
+}
+
+.price-food{
+  color: #ff702a;
 }
