@@ -7,5 +7,135 @@
   scroll-behavior: smooth;
   box-sizing: border-box;
   /* border-style: dotted; */
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight:500;
 }
 
+html{
+  background-color: #1e1d2b;
+}
+body{
+  width: 99vw;
+  height: 100vh;
+}
+
+.bodycont{
+  width: 99vw;
+  height: 99vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+header{
+ height: 8rem;
+ width: 99vw;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ position: fixed;
+ top: 0;
+ left: 0;
+ align-items: center;
+}
+.menu{
+  width: 42%;
+  margin-right: 2rem;
+  display: flex;
+  justify-content: space-around;
+  /* margin-left: 10%; */
+  
+}
+
+.h1header{
+  margin-left: 4rem;
+}
+
+
+.espacio, header{
+  height: 5rem;
+  width: 99vw;
+}
+
+.content{ 
+  display: flex;
+  flex-direction: column;
+  margin: 8rem auto auto 13.5rem;
+  width: 70%;
+  gap: 1.5rem;
+}
+
+
+.home{
+  display: flex;
+  width: 85%;
+  height: 80%;
+}
+
+
+.homeimg {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.btn-menu {
+  width: 10rem;
+  background-color: #ff702a;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 5px 4px #c24100;
+}
+
+.btn-menu:hover {
+  background-color: #ff8c00;
+}
+
+.content h1{
+  color: #ff702a;
+  font-size: 6vw;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.h1header{
+  color: #ff702a;
+  font-size: 3vw;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 1200px) {
+  /* Cambiar a una columna en pantallas más estrechas */
+  .bodycont {
+    grid-template-columns: 1fr;
+    gap: 5vh;
+  }
+  .content{
+    margin: auto;
+    align-self: flex-start;
+  }
+  .menu{
+    display: none;
+  }
+  .home{
+    margin: 0 auto 3rem auto;
+  }
+  .h1header{
+    font-size: 5vw;
+    margin: 0 0 0 1rem;
+  }
+}
+
+.bodycont:nth-child(2){
+align-items: center;
+}
+.content-about{
+/* justify-content: space-around; */
+}
