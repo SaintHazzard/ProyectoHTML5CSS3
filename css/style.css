@@ -28,6 +28,7 @@ body{
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding-top: 5rem;
 }
 
 header{
@@ -72,6 +73,7 @@ header{
   margin: 8rem auto auto 12rem;
   width: min-content;
   gap: 1.5rem;
+  
 }
 .content h3{
   font-size: 2rem;
@@ -347,6 +349,7 @@ SECCION DEL FOOTER */
   .bodycont {
     grid-template-columns: 1fr;
     gap: 5vh;
+    padding-top: 0;
   }
   .content{
     margin: auto;
