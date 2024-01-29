@@ -20,7 +20,7 @@ html{
 }
 body{
   width: 99vw;
-  height: 650vh;
+  height: fit-content;
 }
 
 .bodycont{
@@ -291,7 +291,7 @@ SECCION DEL FOOTER */
     cursor: pointer;
 } */
 .column {
-
+  width: 20rem;
 }
 .column h2 {
     font-size: 20px;
@@ -320,6 +320,7 @@ SECCION DEL FOOTER */
   }
   .content{
     margin: auto;
+    padding-top: 3rem;
     align-self: flex-start;
   }
   .content h1{
