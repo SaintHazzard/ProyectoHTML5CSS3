@@ -41,7 +41,11 @@ header{
  top: 0;
  left: 0;
  align-items: center;
- z-index: 100;
+ z-index: 10;
+}
+
+#icon-menu{
+  display: none;
 }
 .menu{
   width: 42%;
@@ -81,7 +85,7 @@ header{
 
 
 .homeimg {
-  max-width: 20rem;
+  max-width: 40rem;
   height: auto;
   object-fit: contain;
   display: block;
@@ -314,6 +318,32 @@ SECCION DEL FOOTER */
 
 @media (width < 1200px) {
   /* Cambiar a una columna en pantallas más estrechas */
+  #icon-menu{
+    display: block;
+    width: 3rem;
+    position: absolute;
+    z-index: 12;
+    right: 0;
+  }
+  .menu{
+    display: none;
+  }
+  .menuMovil{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* height: 20rem; */
+    float: left;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 12rem;
+    z-index: 11;
+    background-color: #1e1d2b;
+    margin-right: 0;
+  }
+  .homeimg {
+  max-width: 20rem;
+  }
   .bodycont {
     grid-template-columns: 1fr;
     gap: 5vh;
