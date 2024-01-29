@@ -20,7 +20,7 @@ html{
 }
 body{
   width: 99vw;
-  height: 500vh;
+  height: 650vh;
 }
 
 .bodycont{
@@ -236,6 +236,82 @@ display: flex;
 flex-direction: row;
 justify-content: space-around;
 }
+/* 
+SECCION DEL FOOTER */
+#to-foot{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  height: 30%;
+  border: 1px solid #000;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: #ffefe8;
+  align-items: center;
+    
+}
+.row{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.redes{
+  display: flex;
+  flex-direction: column;
+}
+.redes a{
+  display: flex;
+  align-items: end;
+  gap: 0.5rem;
+}
+.container h1{
+  color: #000; 
+}
+.container h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+/* .container button {
+    background-color: orange;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+} */
+.column {
+
+}
+.column h2 {
+    font-size: 20px;
+}
+.column ul {
+    list-style-type: none;
+    padding: 0;
+}
+.column ul li {
+    margin-bottom: 5px;
+}
+/* Clear floats after the columns */
+.row:after {
+    display: flex;
+    clear: both;
+}
+
+
+
+
 @media screen and (max-width: 1200px) {
   /* Cambiar a una columna en pantallas más estrechas */
   .bodycont {
@@ -342,8 +418,38 @@ justify-content: space-around;
     justify-content:space-around;
     align-items: center;
   }
+
+  #to-foot{
+    height: 200vh;
+    justify-content: start;
+  }
+
+  .container{
+    margin: 20rem 0;
+    height: 10%;
+  }
+
+  .row{
+    display: flex;
+    flex-direction: column;
+    justify-self: end;
+    height: 100vh;
+    gap: 0;
+  }
+
 }
 
+.column h2{
+  color: inherit;
+}
+.menu-links::after {
+  content: "";
+  display: block;
+  width: 4em; /* Ajusta este valor para cambiar el ancho de la línea */
+  height: 2px; /* Ajusta este valor para cambiar el grosor de la línea */
+  background-color: orange; /* Cambia este valor para ajustar el color de la línea */
+  margin: 10px 1px 0; /* Ajusta estos valores para cambiar la posición de la línea */
+}
 
 .icon-service{
   max-width: 80%;
@@ -363,75 +469,3 @@ justify-content: space-around;
 
 
 
-/* 
-SECCION DEL FOOTER */
-#to-foot{
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 5rem;
-}
-.container {
-  display: flex;
-  flex-direction: column;
-  width: 85%;
-  height: 30%;
-  border: 1px solid #000;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  background-color: #ffefe8;
-  align-items: center;
-    
-}
-.row{
-  width: 80%;
-  display: flex;
-  justify-content: center;
-  gap: 2.5rem;
-}
-
-.redes{
-  display: flex;
-  flex-direction: column;
-}
-.redes a{
-  display: flex;
-  align-items: end;
-  gap: 0.5rem;
-}
-.container h1{
-  color: #000; 
-}
-.container h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-/* .container button {
-    background-color: orange;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-} */
-.column {
-
-}
-.column h2 {
-    font-size: 20px;
-}
-.column ul {
-    list-style-type: none;
-    padding: 0;
-}
-.column ul li {
-    margin-bottom: 5px;
-}
-/* Clear floats after the columns */
-.row:after {
-    display: flex;
-    clear: both;
-}
