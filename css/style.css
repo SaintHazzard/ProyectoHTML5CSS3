@@ -51,7 +51,8 @@ a {
   width: fit-content;
 }
 .menu {
-  width: 42%;
+  width: 50%;
+  max-height: 42%;
   margin-right: 2rem;
   display: flex;
   justify-content: space-around;
@@ -313,7 +314,7 @@ SECCION DEL FOOTER */
 }
 .column ul li {
   margin-bottom: 1px;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
 }
 /* Clear floats after the columns */
 .row:after {
@@ -332,7 +333,7 @@ SECCION DEL FOOTER */
   }
   .menu {
     max-height: 0;
-    max-width: 0;
+    width: 0;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -357,7 +358,7 @@ SECCION DEL FOOTER */
   .menu.menuMovil {
     max-height: 100vw;
     max-width: 100%;
-    transition: all 0.5s ease-out; /* Transición diferente cuando se despliega */
+    transition: all 0.5s ease-out;
   }
 
   .homeimg {
