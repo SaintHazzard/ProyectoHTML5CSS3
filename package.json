@@ -1,0 +1,24 @@
+{
+  "name": "burguer",
+  "version": "1.0.0",
+  "description": "30% nota pitera",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaintHazzard/ProyectoHTML5CSS3.git"
+  },
+  "keywords": [
+    "Campus",
+    "30%",
+    "hamburguesa"
+  ],
+  "author": "Hazzard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SaintHazzard/ProyectoHTML5CSS3/issues"
+  },
+  "homepage": "https://github.com/SaintHazzard/ProyectoHTML5CSS3#readme"
+}
