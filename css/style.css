@@ -478,12 +478,11 @@ SECCION DEL FOOTER */
   }
 
   #to-foot {
-    height: 200vh;
     justify-content: start;
   }
 
   .container {
-    margin: 20rem 0;
+    margin: -3rem 0;
     width: 20rem;
     height: 15rem;
   }
@@ -491,7 +490,6 @@ SECCION DEL FOOTER */
   .row {
     display: flex;
     flex-direction: column;
-    height: 100vh;
     gap: 0;
     padding-bottom: 1rem;
   }
